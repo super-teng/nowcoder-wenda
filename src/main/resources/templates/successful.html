@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录成功页面</title>
+</head>
+<body>
+    User is $!{userId}
+    UserName is  $!{username}
+    $!{list}
+    <br/>
+    #foreach($value in $list)
+        $value<br/>
+    #end
+
+    #set($temp = "it's good")
+    temp:$temp<br/>
+
+    #macro (function,$index,$value)
+        This is a function $index : $value
+    #end
+
+    #function(1,"hello")<br/>
+</body>
+</html>
